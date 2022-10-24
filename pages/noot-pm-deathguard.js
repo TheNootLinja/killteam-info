@@ -16,25 +16,30 @@ const NootPMDeathguard = () => {
     console.log(e.target.alt)
   }
 
-  const photoWidth = 700;
-  const photoHeight = 400;
+  const photoWidth = 1000;
+  const photoHeight = 600;
 
   return (
     <div>
     <Header/>
-    <div className="w-fit mt-20 grid grid-cols-2 mx-auto">
+    <div className="w-fit mt-20 mx-auto">
+          <div id="dgEquipment" className="h-20"></div>
           <div className="image-card" onClick={handleClick}>
             <Image src={dgEquipment} alt="Deathguard Equipment" width={photoWidth} height={photoHeight}/>
           </div>
+          <div id="pmChampion" className="h-20"></div>
           <div className="image-card">
             <Image src={pmChampion} alt="Deathguard Equipment" width={photoWidth} height={photoHeight}/>
           </div>
+          <div id="pmFighter" className="h-20"></div>
           <div className="image-card">
             <Image src={pmFighter} alt="Deathguard Equipment" width={photoWidth} height={photoHeight}/>
           </div>
+          <div id="pmIconBearer" className="h-20"></div>
           <div className="image-card">
             <Image src={pmIconBearer} alt="Deathguard Equipment" width={photoWidth} height={photoHeight}/>
           </div>
+          <div id="pmWarrior" className="h-20"></div>
           <div className="image-card">
             <Image src={pmWarrior} alt="Deathguard Equipment" width={photoWidth} height={photoHeight}/>
           </div>
